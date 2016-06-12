@@ -88,7 +88,9 @@ header button{
       text-align: center; }
   #about iframe {
     text-align: center; }
-
+#about .video{
+  width: 100%;
+}
 
 #gallery {
   padding: 8% 0;}
