@@ -1,18 +1,26 @@
+body{
+  font-family: 'Josefin Slab', serif
+}
 header .navbar-inverse {
   background: transparent;
   border: none; }
 header .navbar-inverse .navbar-nav > li > a {
   color: white;
   font-size: 1.5em;
-  font-family: 'Josefin Slab', serif; }
+}
 header .navbar-inverse .navbar-nav > li > a:hover, header .navbar-defauld .navbar-nav > li > a:focus {
   color: white;
   border-bottom: 3px solid #FFAB10; }
 header .navbar-brand {
   padding: 8px; }
 header .logo {
-  width: 40px; }
-
+  width: 40px; 
+  zoom:100%;
+}
+header button{
+  border: 1px solid #FFAB10;
+  background: transparent;
+}
 #menu.active {
   background: #511324;
   padding: 10px 0;
@@ -27,12 +35,12 @@ header .logo {
   -webkit-transform: translateZ(0); }
 
 #bg-wrapper {
-  background: url("../img/bg-2.jpg") no-repeat;
-  background-size: cover;
-  padding: 350px 0;
-  /* height:700px; */
-  background-color: rgba(0, 0, 255, 0.46);
-  background-blend-mode: color;
+  background: url("../img/bg-origin.jpg") no-repeat;
+  background-size:100%;
+  height: 630px;
+  display:block;
+  padding:0 !important;
+  margin:0;
   background-attachment: fixed; }
 
 #social {
@@ -66,61 +74,78 @@ header .logo {
       background: #1DA1F2; }
 
 #about {
+  text-align: center;
   background: black;
-  padding: 3% 1%; }
-  #about h2 {
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    color: #4D1022;
-    font-size: 3em;
-    font-weight: bold; }
-    #about h2 span {
+  padding: 8% 1%; }
+    #about span {
       font-weight: bold;
       font-size: 2em; }
   #about p {
     color: white;
     padding: 2.5% 20%;
-    font-family: 'Josefin Sans', sans-serif; }
+ }
     #about p p:nth-child {
       text-align: center; }
   #about iframe {
     text-align: center; }
 
-#gallery {
-  background: red; }
-  #gallery .imagen img {
-    width: 50%; }
 
 #gallery {
-  background: #5f5f5f;
-  padding-bottom: 110px; }
-
+  padding: 8% 0;}
+#gallery .photo{
+  width: 100%;
+}
+.gallery{
+  padding-bottom: 3%;
+}
+#gallery .btn-group{
+  top:225px;
+}
+#gallery .btn-danger{
+  background: #4D1022;
+  color:white;
+  border:none;
+}
+.btn-danger>i{
+  color: white;
+}
 .thumbnail {
   padding: 9px;
-  border: 1px solid rgba(111, 107, 107, 0.26);
-  color: #34495e;
-  font-family: 'Josefin Sans', sans-serif; }
-
+  border: 1px solid rgba(111, 107, 107, 0.26);}
+  /*CONTACT*/
 #contact {
   background: black;
-  padding: 5% 0;
+  padding: 10% 0;
   color: white;
-  font-family: 'Josefin Sans', sans-serif; }
+  text-align: center;
+}
   #contact h2 {
     text-align: center;
     color: #4D1022;
     font-size: 3em;
     font-weight: bold;
-    font-family: 'Josefin Slab', serif; }
+    padding: 4%;
+ }
   #contact input, #contact textarea {
     background: rgba(255, 255, 255, 0.11);
     border-radius: 8px;
     border: none;
     width: 50%;
     padding: 3px 5px; }
-    #contact input input, #contact input textarea:hover, #contact textarea input, #contact textarea textarea:hover {
+    #contact  input, #contact input textarea:hover, #contact textarea input, #contact textarea textarea:hover {
       border: 1.8px solid #FFAB10; }
-
+    #contact a{
+      background: rgba(115, 71, 71, 0.51);
+      color:#FFAB10;
+      padding: 10px 17px;
+      text-align: center;
+    }
+    #contact li{
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+    }
+/*FOOTER*/
 footer {
   text-align: center;
   background: #696868;
@@ -130,23 +155,20 @@ footer {
 #date-team {
   padding: 5% 0;
   background: black;
-  color: white; }
-  #date-team h2 {
-    text-align: center;
-    font-family: 'SF Slapstick Comic';
-    font-weight: bold;
-    font-size: 2.5em;
-    padding-bottom: 5%;
-    color: #4D1022; }
+  color: white; 
+text-align: center;}
   #date-team p {
-    font-family: 'Josefin Sans', sans-serif;
+    padding-top:20px;
     padding-bottom: 15px; }
   #date-team .icon-team {
-    background: rgba(115, 71, 71, 0.51);
+    background: rgba(241, 235, 235, 0.83);
     font-size: 1.5em;
     color: #FFAB10;
     padding: 8px 15px;
     border-radius: 3px; }
+  #date-team .icon-team :hover{
+      background:rgba(241, 235, 235, 0.83)
+    }
   #date-team .box-team {
     position: relative;
     width: 100%;
@@ -159,7 +181,7 @@ footer {
     text-align: center;
     font-size: 16px;
     background-color: #000000;
-    font-family: 'Josefin Sans', sans-serif; }
+ }
   #date-team .box-team*, #date-team .box-team*:before, #date-team .box-team*:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -167,6 +189,7 @@ footer {
     transition: all 0.55s ease; }
   #date-team .box-team img {
     width: 100%;
+    height: 246px;
     backface-visibility: hidden;
     vertical-align: top; }
   #date-team .box-team figcaption {
@@ -244,5 +267,12 @@ footer {
   #date-team .box-team.hover figcaption:after {
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s; }
-
+.img-team{
+  text-align: center;
+    padding: 5%;
+}
+footer{
+  color: white;
+  font-size: 1.5em;
+}
 /*# sourceMappingURL=main.css.map */
