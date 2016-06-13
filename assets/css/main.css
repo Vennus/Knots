@@ -147,6 +147,9 @@ header button{
       text-decoration: none;
       text-align: center;
     }
+    .text-player{
+      font-size: 1.4em;
+    }
 /*FOOTER*/
 footer {
   text-align: center;
